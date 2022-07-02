@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+
 body {
+  max-width: 768px;
   font-family: "Roboto";
   font-size: 16px;
   margin: 0;
@@ -157,9 +159,9 @@ height: 400pxpx;
 .restaurants article>figure>img{
  object-fit:cover;
  width: 100%;
- max-height: 250px ;
+ max-height: 200px ;
   border-top-right-radius: 20px;
-  border-top-left-radius: 20px
+  border-top-left-radius: 20px;
   padding-bottom: 10px;
 
 }
