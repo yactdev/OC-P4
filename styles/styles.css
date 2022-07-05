@@ -70,7 +70,7 @@ font-weight:900;
   color: #fff;
   font-weight: 600;
   font-family: "Roboto";
-  /* Created with https://www.css-gradient.com */
+
   background: #9456dc;
   background: -webkit-linear-gradient(bottom, #9456dc, #ff79db);
   background: -moz-linear-gradient(bottom, #9456dc, #ff79db);
@@ -132,7 +132,7 @@ gap:20px;
 
 }
 .restaurants figure{
-height: 400pxpx;
+height: 400px;
   margin:20px;
   border-radius: 20px;
   -webkit-box-shadow: -3px 0px 17px 12px rgba(0,0,0,0.1);
@@ -186,3 +186,64 @@ text-decoration: none;
   flex-direction: column;
   gap:10px;
  }
+
+
+
+ /* alafrancaise code*/
+
+
+
+
+.fondo{
+
+margin: 0;
+
+}
+.fondo img{
+object-fit: cover;
+width: 100%;
+
+
+}
+ .menu{
+  margin-top: -20px;
+  display: flex;
+  flex-flow: column wrap;
+  gap:20px;
+  background-color: rgb(234, 228, 228);
+  border-radius: 25px 25px 0 0;
+  overflow: visible;
+ }
+.entree{ 
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  align-items: center;
+  overflow: visible;
+  
+}
+
+.entree h1{
+  margin: 20px;
+  
+}
+ .selection{
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  border-radius: 20px;
+  width: 90%;
+gap:10px;
+  box-shadow: 1px 3px 10px grey;
+ }
+
+ .selection h3,h5{
+  margin:  0 0 0 20px;
+}
+.selection h5{
+font-weight:300;
+}
+
+
