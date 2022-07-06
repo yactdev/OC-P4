@@ -206,26 +206,36 @@ width: 100%;
 
 }
  .menu{
-  margin-top: -20px;
+
   display: flex;
   flex-flow: column wrap;
   gap:20px;
   background-color: rgb(234, 228, 228);
   border-radius: 25px 25px 0 0;
-  overflow: visible;
+
  }
-.entree{ 
+.entree , .main-dish , .dessert {  
   display: flex;
   flex-direction: column;
   gap:20px;
   align-items: center;
-  overflow: visible;
+
   
 }
 
 .entree h1{
-  margin: 20px;
+  display: flex;
+ margin: 20px;
+ padding-bottom: 5px;
+ align-self: flex-start;
+  color: #333;
+
   
+}
+
+.entree h1:hover{
+  border-bottom: 4px solid green;
+  width: 11%;
 }
  .selection{
   background-color: #fff;
@@ -235,7 +245,7 @@ width: 100%;
   margin: 0;
   border-radius: 20px;
   width: 90%;
-gap:10px;
+  gap:10px;
   box-shadow: 1px 3px 10px grey;
  }
 
@@ -246,4 +256,8 @@ gap:10px;
 font-weight:300;
 }
 
-
+.btn-order{
+display: flex;
+flex-direction:row;
+ align-self: center;
+}
