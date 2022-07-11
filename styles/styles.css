@@ -223,20 +223,22 @@ width: 100%;
   
 }
 
-.entree h1{
-  display: flex;
- margin: 20px;
- padding-bottom: 5px;
- align-self: flex-start;
-  color: #333;
 
-  
+
+.t-menu{
+  display: flex;
+  margin: 20px;
+  padding-bottom: 5px;
+  align-self: flex-start;
+   color: #333;
+ 
 }
 
 .entree h1:hover{
   border-bottom: 4px solid green;
   width: 11%;
 }
+
  .selection{
   background-color: #fff;
   padding: 10px;
@@ -257,6 +259,8 @@ font-weight:300;
 }
 
 .btn-order{
+  margin: 25px auto;
+  
 display: flex;
 flex-direction:row;
  align-self: center;
