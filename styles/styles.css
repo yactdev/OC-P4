@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+/* SETTING BODY PROPERTIES  */
 
 body {
   max-width: 768px;
@@ -8,26 +9,32 @@ body {
   font-size: 16px;
   margin: 0 auto;
 }
+
 a{
   text-decoration: none;
   
 }
+
 a:visited,a:hover, a:link{
   color: white;
 }
-/* main logo  */
-.logo
-{
+
+/* MAIN LOGO DESIGN */
+
+.logo{
   padding: 10px;
   -webkit-box-shadow: 0px 9px 0px -2px rgba(0,0,0,0.25);
   -moz-box-shadow: 0px 9px 0px -2px rgba(0,0,0,0.25);
   box-shadow: 0px 9px 0px -2px rgba(0,0,0,0.20);
 }
+
 .logo img{
   display: block;
   height: 40px;
   margin: 15px auto;
 }
+
+/* LOCATION SECTION */
 
 .location{
   padding: 20px;
@@ -37,9 +44,12 @@ a:visited,a:hover, a:link{
   color: #333;
   background-color: rgb(125 125 125 / 28%);
 }
+
 .location i{
   margin-right: 10px;
 }
+
+
 .booking {
   height: 15em;
   display: flex;
@@ -51,7 +61,7 @@ a:visited,a:hover, a:link{
   padding: 40px;
 }
 .booking h1{
-font-weight:900;
+  font-weight:900;
 }
 .booking p{
 
@@ -98,14 +108,11 @@ font-weight:900;
   color:#9356dc;
   margin: 5px;
 }
-.work span{
 
-
-}
 .work{
-font-weight: bold;
+  font-weight: bold;
   display: flex;
-align-items: center;
+  align-items: center;
   font-size: 20px;
   box-shadow: 0px 2px 30px rgb(176, 173, 173);
   margin:  0px 20px ;
