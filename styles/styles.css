@@ -13,7 +13,7 @@ a{
   
 }
 a:visited,a:hover, a:link{
-  color: black;
+  color: white;
 }
 /* main logo  */
 .logo
@@ -81,6 +81,8 @@ font-weight:900;
   background: linear-gradient(to top, #9456dc, #ff79db);
   box-shadow: 1px 3px 10px grey;
 }
+
+
 .info{
   display: flex;
   flex-direction: column;
@@ -263,8 +265,11 @@ font-weight:300;
 
 .btn-order{
   margin: 25px auto;
-  
+  color: #fff;
 display: flex;
 flex-direction:row;
  align-self: center;
+}
+.btn-gradient>a{
+  color: #fff;
 }
