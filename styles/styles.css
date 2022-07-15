@@ -246,9 +246,10 @@ width: 100%;
  
 }
 
-.entree h1:hover{
+.mark h2:hover{
   border-bottom: 4px solid green;
   width: 11%;
+  overflow:visible;
 }
 
  .selection{
