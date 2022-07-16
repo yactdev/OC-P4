@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap");
 /* SETTING BODY PROPERTIES  */
 
 body {
   max-width: 480px;
-  font-family: "Roboto";
-  font-size: 16px;
+  font-family: "Roboto", sans-serif;
   margin: 0 auto;
 }
 
@@ -163,15 +162,18 @@ a:link {
 }
 
 footer {
-  font-family: "Roboto";
-  background-color: black;
+  font-family: "Roboto", sans-serif;
+  background-color: #353536;
   color: #fff;
 }
-footer a,
-footer > h1 {
+footer a {
+  position: relative;
   margin: 0px 20px;
   color: #fff;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  font-weight: bold;
 }
 
 footer {
@@ -179,6 +181,9 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+footer i {
+  clear: left;
 }
 
 /* alafrancaise code*/
@@ -338,4 +343,13 @@ h5 {
   width: 0;
   height: 0;
   overflow: hidden;
+}
+
+footer > img {
+  padding: 20px;
+  width: 30%;
+  filter: invert(1);
+}
+footer div {
+  margin-left: 20px;
 }
