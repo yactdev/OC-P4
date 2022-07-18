@@ -368,6 +368,9 @@ footer > img {
   padding: 20px;
   width: 30%;
   filter: invert(1);
+  -webkit-filter: invert(1);
+  -ms-filter: invert(1);
+  -o-filter:invert(1);
 }
 footer div {
   margin-left: 20px;
