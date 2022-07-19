@@ -152,11 +152,13 @@ margin: auto;
 }
 .restaurants article > figure > figcaption > h2 {
   margin-left: 20px;
+  color: #333;
 }
 .restaurants article > figure > figcaption > p {
   margin: 20px;
   overflow: hidden;
   padding-bottom: 20px;
+  color: #333;
 }
 
 .restaurants article > figure > img {
@@ -374,4 +376,8 @@ footer > img {
 }
 footer div {
   margin-left: 20px;
+}
+
+.main{
+  color:#333;
 }
