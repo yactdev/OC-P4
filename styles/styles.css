@@ -25,20 +25,18 @@ a:link {
   display: flex;
   align-items: baseline;
   padding: 20px;
-  
+
   -webkit-box-shadow: 0px 9px 0px -2px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 9px 0px -2px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 9px 0px -2px rgba(0, 0, 0, 0.2);
 }
-.logo i{
+.logo i {
   font-size: 30px;
-
 }
 
 .logo img {
-
-height: 30px;
-margin: auto;
+  height: 30px;
+  margin: auto;
 }
 
 /* LOCATION SECTION */
@@ -140,23 +138,36 @@ margin: auto;
   gap: 20px;
   margin-top: 40px;
 }
+
+.restaurants > h1 {
+  margin-left: 20px;
+}
+
 .restaurants figure {
   margin: 20px;
   border-radius: 20px;
+  overflow: hidden;
   -webkit-box-shadow: -3px 0px 17px 12px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: -3px 0px 17px 12px rgba(0, 0, 0, 0.1);
   box-shadow: -3px 0px 17px 12px rgba(0, 0, 0, 0.1);
 }
-.restaurants article {
-  overflow: hidden;
+
+.restaurants article figure img {
+  width: 100%;
+  display: block;
 }
-.restaurants article > figure > figcaption > h2 {
-  margin-left: 20px;
+.restaurants article figcaption {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restaurants article figcaption h2 a {
   color: #333;
 }
-.restaurants article > figure > figcaption > p {
-  margin: 20px;
-  overflow: hidden;
+
+.restaurants article figcaption p {
   padding-bottom: 20px;
   color: #333;
 }
@@ -252,10 +263,27 @@ footer i {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  animation-name: slideup;
+  animation-fill-mode: backwards;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+}
+
+.selection:nth-of-type(1) {
+  animation-delay: 100ms;
+}
+.selection:nth-of-type(2) {
+  animation-delay: 200ms;
+}
+.selection:nth-of-type(3) {
+  animation-delay: 300ms;
 }
 
 .selection > div:first-of-type {
   padding: 10px;
+  flex: 10;
 }
 
 .selection h3,
@@ -265,16 +293,22 @@ h5 {
 .selection h5 {
   font-weight: 300;
 }
-
+.selection .price {
+  padding-right: 12px;ß
+  transition: all 0.3s ease;
+  flex: 2;
+}
 .check {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 100%;
   width: 50px;
   background-color: #99e2d0;
   color: #fff;
-  margin-right: -120px;
+  position: absolute;
+  top: 0;
+  right: -50px;
   transition: all 0.3s ease;
 }
 
@@ -284,10 +318,23 @@ h5 {
 }
 
 .selection:hover .check {
-  margin-right: 0;
+  right: 0;
 }
 .selection:hover .check i {
   transform: rotate(0deg);
+}
+
+.selection:hover .price {
+  padding-right: 62px;
+}
+
+.selection:hover h3,
+.selection:hover h5 {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
 }
 
 .btn-order {
@@ -299,14 +346,14 @@ h5 {
   align-self: center;
 }
 
-.btn-order>span{
-margin: 0 auto;
+.btn-order > span {
+  margin: 0 auto;
 }
 
 .btn-gradient > a {
   display: inline;
   color: #fff;
-  justify-items: center; 
+  justify-items: center;
 }
 
 .menu > h1 {
@@ -326,6 +373,9 @@ margin: 0 auto;
   border-top-right-radius: 40px;
   margin-top: -50px;
   position: relative;
+}
+.restaurant .favorite {
+  margin-top: -15px;
 }
 .favorite input {
   width: 0;
@@ -351,6 +401,9 @@ margin: 0 auto;
 .favorite input:checked + i + i {
   display: block;
   color: red;
+  background-image: linear-gradient(to top, #9456dc, #ff79db);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .favorite input:checked + i {
   display: none;
@@ -361,23 +414,35 @@ margin: 0 auto;
   height: 0;
   overflow: hidden;
 }
-footer h1{
+footer {
+  padding-bottom: 30px;
+}
+footer h1 {
   margin-left: 20px;
-  
 }
 footer > img {
-
   padding: 20px;
   width: 30%;
   filter: invert(1);
   -webkit-filter: invert(1);
   -ms-filter: invert(1);
-  -o-filter:invert(1);
+  -o-filter: invert(1);
 }
 footer div {
   margin-left: 20px;
 }
 
-.main{
-  color:#333;
+.main {
+  color: #333;
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
