@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
 /* SETTING BODY PROPERTIES  */
 
 body {
@@ -135,12 +134,18 @@ a:link {
 .restaurants {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 40px;
+
+  padding-bottom: 40px;
+  margin-top: 80px;
+  background-color: #f6f6f6;
 }
 
 .restaurants > h1 {
+  font-weight: bold;
+  font-size: xx-large;
   margin-left: 20px;
+  padding-top: 40px;
+  margin-bottom: 10px;
 }
 
 .restaurants figure {
@@ -161,6 +166,7 @@ a:link {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #333;
 }
 
 .restaurants article figcaption h2 a {
@@ -168,7 +174,6 @@ a:link {
 }
 
 .restaurants article figcaption p {
-  padding-bottom: 20px;
   color: #333;
 }
 
@@ -294,7 +299,7 @@ h5 {
   font-weight: 300;
 }
 .selection .price {
-  padding-right: 12px;ß
+  padding-right: 12px;
   transition: all 0.3s ease;
   flex: 2;
 }
@@ -310,6 +315,7 @@ h5 {
   top: 0;
   right: -50px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .check i {
@@ -385,13 +391,10 @@ h5 {
 
 .favorite i {
   display: block;
-
+  margin-top: -20px;
   background-color: transparent;
   text-align: center;
-
   font-size: 30px;
-
-  position: sticky;
 }
 
 .favorite input + i + i {
@@ -400,7 +403,7 @@ h5 {
 
 .favorite input:checked + i + i {
   display: block;
-  color: red;
+
   background-image: linear-gradient(to top, #9456dc, #ff79db);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
