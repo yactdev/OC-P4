@@ -299,28 +299,32 @@ h5 {
   font-weight: 300;
 }
 .selection .price {
-  padding-right: 12px;
+  padding-right: 20px;
   transition: all 0.3s ease;
-  flex: 2;
+  /*flex: 2;*/
+  display: flex;
+  align-self: end;
+  padding-bottom: 10px;
 }
 .check {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 50px;
+  width: 60px;
   background-color: #99e2d0;
   color: #fff;
   position: absolute;
   top: 0;
-  right: -50px;
+  right: -60px;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .check i {
-  transform: rotate(45deg);
-  transition: all 2s ease;
+  transform: rotate(-360deg);
+  transition: all 0.5s ease;
+  font-size: 25px;
 }
 
 .selection:hover .check {
@@ -331,7 +335,7 @@ h5 {
 }
 
 .selection:hover .price {
-  padding-right: 62px;
+  padding-right: 70px;
 }
 
 .selection:hover h3,
@@ -377,7 +381,7 @@ h5 {
   background-color: #f6f6f6;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  margin-top: -50px;
+  margin-top: -60px;
   position: relative;
 }
 .restaurant .favorite {
