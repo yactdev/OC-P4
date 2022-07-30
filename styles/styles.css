@@ -165,22 +165,27 @@ a:link {
   display: block;
 }
 .restaurants article figcaption {
-  padding: 10px 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #333;
 }
 
-.restaurants article figcaption h2 a {
+.restaurants article figcaption h2 {
   color: #333;
+  margin: 5px;
 }
 
 .restaurants article figcaption p {
   color: #333;
+  margin: 5px;
 }
 
-.restaurants article > figure > img {
+.restaurants article > figure img {
   object-fit: cover;
   width: 100%;
   max-height: 200px;
@@ -228,6 +233,8 @@ footer i {
   flex-flow: column wrap;
   gap: 20px;
   background-color: #f6f6f6;
+  position: relative;
+  padding-bottom: 120px;
 }
 .layout {
   display: flex;
@@ -293,7 +300,7 @@ footer i {
 }
 
 .selection h3,
-h5 {
+.selection h5 {
   margin: 0;
 }
 .selection h5 {
@@ -323,7 +330,7 @@ h5 {
 }
 
 .check i {
-  transform: rotate(-360deg);
+  transform: rotate(360deg);
   transition: all 0.5s ease;
   font-size: 25px;
 }
@@ -351,12 +358,13 @@ h5 {
   cursor: pointer;
 }
 .btn-order {
-  margin-bottom: 100px;
-  margin-top: 0;
   width: 35%;
   color: #fff;
   display: flex;
   align-self: center;
+  position: absolute;
+  left: calc(50% - 102px);
+  bottom: 20px;
 }
 
 .btn-order > span {
