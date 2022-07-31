@@ -106,7 +106,10 @@ a:link {
   color: #9356dc;
   margin: 5px;
 }
-
+figcaption a,
+figcaption a:visited {
+  color: #333;
+}
 .work {
   font-weight: bold;
   display: flex;
@@ -121,7 +124,7 @@ a:link {
 }
 .work p {
   width: 25px;
-  margin: 0 0 0 -15px;
+  margin: 0 0 0 -12px;
   color: #fff;
   font-size: 20px;
   text-align: center;
@@ -230,7 +233,8 @@ footer i {
 }
 .menu {
   display: flex;
-  flex-flow: column wrap;
+  /* found the error in this line */
+  flex-direction: column;
   gap: 20px;
   background-color: #f6f6f6;
   position: relative;
@@ -244,7 +248,7 @@ footer i {
 }
 
 .t-menu {
-  margin: 0 20px;
+  margin: 10px 20px;
   padding-bottom: 5px;
   align-self: flex-start;
   color: #333;
@@ -259,11 +263,6 @@ footer i {
   height: 2px;
   background-color: #99e2d0;
   margin-top: 5px;
-}
-.mark h2:hover {
-  border-bottom: 4px solid green;
-  width: 11%;
-  overflow: visible;
 }
 
 .selection {
@@ -330,7 +329,7 @@ footer i {
 }
 
 .check i {
-  transform: rotate(360deg);
+  transform: rotate(-360deg);
   transition: all 0.5s ease;
   font-size: 25px;
 }
@@ -398,6 +397,7 @@ footer i {
 .restaurant .favorite {
   margin-top: -15px;
 }
+
 .favorite input {
   width: 0;
   height: 0;
