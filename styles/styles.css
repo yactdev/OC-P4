@@ -368,9 +368,11 @@ footer i {
   text-overflow: ellipsis;
   max-width: 90%;
 }
-.selection .check:hover {
+
+.favorite label:hover {
   cursor: pointer;
 }
+
 .btn-order {
   width: 35%;
   color: #fff;
