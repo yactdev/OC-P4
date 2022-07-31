@@ -234,11 +234,26 @@ footer i {
 .menu {
   display: flex;
   /* found the error in this line */
-  flex-direction: column;
+  flex-direction: column; /* flex-flow: column nowrap;*/
   gap: 20px;
   background-color: #f6f6f6;
   position: relative;
   padding-bottom: 120px;
+}
+.new-tag {
+  display: block;
+  position: relative;
+  left: 275px;
+  top: 70px;
+  background-color: rgb(153 226 208);
+  width: 90px;
+  /* height: 30px; */
+  font-size: large;
+  font-weight: 700;
+  color: #008360;
+  text-align: center;
+  padding: -1px;
+  padding: 5px;
 }
 .layout {
   display: flex;
