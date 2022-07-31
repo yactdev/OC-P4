@@ -243,7 +243,7 @@ footer i {
 .new-tag {
   display: block;
   position: relative;
-  left: 275px;
+  left: calc(100% - 140px);
   top: 70px;
   background-color: rgb(153 226 208);
   width: 90px;
