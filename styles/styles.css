@@ -25,9 +25,10 @@ a:link {
   align-items: baseline;
   padding: 20px;
 
-  -webkit-box-shadow: 0px 9px 0px -2px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 9px 0px -2px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 9px 0px -2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 1px 3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 1px 3px rgba(0, 0, 0, 0.15);
+
+  box-shadow: 0px 0px 1px 3px rgb(0 0 0 / 15%);
 }
 .logo i {
   font-size: 30px;
@@ -45,8 +46,7 @@ a:link {
   font-style: "roboto";
   font-size: x-large;
   text-align: center;
-  color: #333;
-  background-color: rgb(125 125 125 / 28%);
+  background-color: rgb(234 234 234);
 }
 
 .location i {
@@ -60,7 +60,7 @@ a:link {
   align-content: center;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(246 246 246);
   padding: 40px;
 }
 .booking h1 {
@@ -140,8 +140,8 @@ figcaption a:visited {
 .restaurants {
   display: flex;
   flex-direction: column;
-
-  padding-bottom: 40px;
+  gap: 10px;
+  padding-bottom: 60px;
   margin-top: 80px;
   background-color: #f6f6f6;
 }
@@ -155,7 +155,7 @@ figcaption a:visited {
 }
 
 .restaurants figure {
-  margin: 20px;
+  margin: 5px 20px;
   border-radius: 20px;
   overflow: hidden;
   -webkit-box-shadow: -3px 0px 17px 12px rgba(0, 0, 0, 0.1);
@@ -240,20 +240,19 @@ footer i {
   position: relative;
   padding-bottom: 120px;
 }
+
 .new-tag {
   display: block;
-  position: relative;
+  position: absolute;
   left: calc(100% - 140px);
-  top: 70px;
   background-color: rgb(153 226 208);
-  width: 90px;
-  /* height: 30px; */
+  width: 85px;
   font-size: large;
   font-weight: 700;
   color: #008360;
   text-align: center;
-  padding: -1px;
-  padding: 5px;
+  padding: 10px;
+  margin-top: 15px;
 }
 .layout {
   display: flex;
