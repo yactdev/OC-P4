@@ -242,7 +242,7 @@ footer i {
   gap: 20px;
   background-color: #f6f6f6;
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 }
 
 .new-tag {
@@ -378,13 +378,20 @@ footer i {
 }
 
 .btn-order {
-  width: 35%;
+  /*width: 35%;
   color: #fff;
   display: flex;
   align-self: center;
   position: absolute;
   left: calc(50% - 102px);
-  bottom: 20px;
+  bottom: 20px;*/
+  width: 35%;
+  color: #fff;
+  display: flex;
+  align-self: center;
+  /* position: absolute; */
+  /* left: calc(50% - 102px); */
+  margin-top: 40px;
 }
 
 .btn-order > span {
